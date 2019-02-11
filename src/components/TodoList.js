@@ -1,14 +1,18 @@
 import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './TodoList.scss';
+import TodoItem from './TodoItem';
 
 const cx = classnames.bind(styles);
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, setChecked, removeTodo }) => {
   const todoList = todos.map(todo => (
-    <div className={cx('item')} key={todo.id}>
-      {todo.content}
-    </div>
+    <TodoItem
+      key={todo.id}
+      todo={todo}
+      setChecked={setChecked}
+      removeTodo={removeTodo}
+    />
   ));
 
   return <div className={cx('TodoList')}>{todoList}</div>;

@@ -4,12 +4,5 @@
     display: flex;
     flex-direction: column;
 
-    .item {
-        background: white;
-        padding: 1rem;
-    }   
     
-    .item + .item {
-        border-top: 1px solid $oc-gray-2;
-    }
 }
