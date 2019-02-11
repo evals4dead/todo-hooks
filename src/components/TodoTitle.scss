@@ -1,0 +1,17 @@
+@import '~styles/common.scss';
+
+.TodoTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    height: 3rem;
+
+    background: $oc-teal-6;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $oc-gray-2;
+}
